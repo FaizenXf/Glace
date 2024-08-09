@@ -104,7 +104,7 @@ module.exports = {
                     ],
                     image: "https://cdn.discordapp.com/attachments/1264134884432285766/1270352605154902151/GlaceYT.gif?ex=66b3638f&is=66b2120f&hm=23878b54affd61573b105db7c1c016eb730911dc762b3fbabac5a32cbc884119&",
                     color: "#3498db",
-                    thumbnail: "https://cdn.discordapp.com/attachments/1264134884432285766/1270353776489922651/s_removed.png?ex=66b364a6&is=66b21326&hm=2d4ded259b57f476c901c58401e1d6faba2653c0a964ee1c4f371ecf3da52100&",
+                    //thumbnail: "https://cdn.discordapp.com/attachments/1264134884432285766/1270353776489922651/s_removed.png?ex=66b364a6&is=66b21326&hm=2d4ded259b57f476c901c58401e1d6faba2653c0a964ee1c4f371ecf3da52100&",
                     author: {
                         name: 'All In One',
                         iconURL: "https://cdn.discordapp.com/attachments/1246408947708072027/1255167194036437093/1558-zerotwo-exciteddance.gif?ex=667c250a&is=667ad38a&hm=09e6db36fd79436eb57de466589f21ca947329edd69b8e591d0f6586b89df296&",
@@ -260,7 +260,7 @@ module.exports = {
                         `**Enabled Categories:** ${enabledCategoriesList.join(', ')}\n`,
                         `**Disabled Categories:** ${disabledCategoriesList.join(', ')}\n`
                     ],
-                    image: "https://cdn.discordapp.com/attachments/1264134884432285766/1270352605154902151/GlaceYT.gif?ex=66b3638f&is=66b2120f&hm=23878b54affd61573b105db7c1c016eb730911dc762b3fbabac5a32cbc884119&",
+                    image: "https://media.discordapp.net/attachments/1267331594017046568/1271514266565869588/download_1.jpg?ex=66b79d70&is=66b64bf0&hm=de965e76fbf34c39a86b13565e40248f056b0369a9bed0287af2a666febb195c&",
                     color: "#3498db",
                     thumbnail: "https://cdn.discordapp.com/attachments/1264134884432285766/1270353776489922651/s_removed.png?ex=66b364a6&is=66b21326&hm=2d4ded259b57f476c901c58401e1d6faba2653c0a964ee1c4f371ecf3da52100&",
                     author: {
@@ -368,7 +368,7 @@ module.exports = {
                     .setDescription(page.description)
                     .setColor(color)
                     .setImage(page.image)
-                    .setThumbnail(page.thumbnail)
+                    //.setThumbnail(page.thumbnail)
                     .setAuthor({ name: page.author.name, iconURL: page.author.iconURL, url: page.author.url })
                     .addFields({ name: fieldName, value: page.commands.join(', ') });
             };
@@ -379,17 +379,17 @@ module.exports = {
                     .addComponents(
                         new ButtonBuilder()
                             .setCustomId('previous1')
-                            .setLabel('Previous')
+                            .setLabel('⬅️')
                             .setStyle(ButtonStyle.Primary)
                             .setDisabled(currentPage === 0),
                         new ButtonBuilder()
                             .setCustomId('next2')
-                            .setLabel('Next')
+                            .setLabel('➡️')
                             .setStyle(ButtonStyle.Primary)
                             .setDisabled(currentPage === pages.length - 1),
                         new ButtonBuilder()
                             .setCustomId('prefix')
-                            .setLabel(isPrefixHelp ? 'Normal Command List' : 'Excess Command List')
+                            .setLabel(isPrefixHelp ? 'Normal Commands' : 'Excess Commands')
                             .setStyle(ButtonStyle.Secondary)
                     );
             };
@@ -410,7 +410,7 @@ module.exports = {
 
             await interaction.reply({ embeds: [createEmbed()], components: [createDropdown(), createActionRow()] });
 
-            const collector = interaction.channel.createMessageComponentCollector({ time: 60000 });
+            const collector = interaction.channel.createMessageComponentCollector({ time: 60000 * 2 });
 
             collector.on('collect', async (button) => {
                 if (button.user.id !== interaction.user.id) return;
