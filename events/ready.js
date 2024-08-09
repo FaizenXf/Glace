@@ -6,12 +6,12 @@ module.exports = {
     execute(client) {
   
         const activities = [
-            { name: '68 Then 69', type: ActivityType.Watching }
+            { name: '.help | @sixtynine', type: ActivityType.Watching }
             
         ];
 
      
-        const statuses = ['online', 'idle', 'dnd'];
+        const statuses = [ 'dnd'];
 
      
         let currentActivityIndex = 0;
