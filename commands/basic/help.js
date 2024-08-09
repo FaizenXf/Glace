@@ -82,7 +82,7 @@ module.exports = {
 
                 pages.push({
                     title: 'Bot Information',
-                    description: ``<:Knownas:1266799019472978076> ** __ABOUT ME. . !__**
+                    description: `<:Knownas:1266799019472978076> ** __ABOUT ME. . !__**
 > Heya, It's " __Safarii Utility__ "A Elegant Multipurpose Discord Bot with Impressive Quality of Sound System & Large Amout of Features For Greater Experience . " __Safarii Utility__ " is Making Music & Moderation More Enhanced in Discord.
 
 **<:Knownas:1266799019472978076> __CATEGORIES. . !__**\n> <:saf_anime:1260983037362049066> : Anime
