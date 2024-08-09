@@ -82,9 +82,18 @@ module.exports = {
 
                 pages.push({
                     title: 'Bot Information',
-                    description: `Welcome to the help command! This bot provides a variety of commands to enhance your server experience. Below are the categories and the number of commands available in each.`,
+                    description: ``<:Knownas:1266799019472978076> ** __ABOUT ME. . !__**
+> Heya, It's " __Safarii Utility__ "A Elegant Multipurpose Discord Bot with Impressive Quality of Sound System & Large Amout of Features For Greater Experience . " __Safarii Utility__ " is Making Music & Moderation More Enhanced in Discord.
+
+**<:Knownas:1266799019472978076> __CATEGORIES. . !__**\n> <:saf_anime:1260983037362049066> : Anime
+> <:saf_info:1260983784397078668> : Information 
+> <:saf_fun:1260983847282020382> : Fun-Game 
+> <:saf_moderation:1260983899853688935> : Moderation 
+> <:saf_util:1260984270726631576> : Utility
+> <:saf_music:1260983606336290968> : Music
+> <:saf_setting:1260984135615250524> : Setup \n`,
                     commands: [
-                        `**💜 Bot Developer:** GlaceYT\n`,
+                        `**💜 Bot Developer:**Faizen\n`,
                         `**Bot Version:** 1.0.0\n`,
                         `**Total Servers:** ${totalServers}\n`,
                         `**Total Members:** ${totalMembers}\n`,
