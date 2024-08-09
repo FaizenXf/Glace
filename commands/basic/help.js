@@ -367,7 +367,7 @@ module.exports = {
                     .setTitle(page.title)
                     .setDescription(page.description)
                     .setColor(color)
-                    .setImage(page.image)
+                    .setImage("https://media.discordapp.net/attachments/1267331594017046568/1271517011477922014/Black_and_White_Pattern_Welcome_Discord_Profile_Banner_20240809_224307_0000.png?ex=66b79fff&is=66b64e7f&hm=61cbc08a8f8f3e4dfa5b69af0febec3f87390aa36a9f0f80c7515ced180562c4&")
                     //.setThumbnail(page.thumbnail)
                     .setAuthor({ name: page.author.name, iconURL: page.author.iconURL, url: page.author.url })
                     .addFields({ name: fieldName, value: page.commands.join(', ') });
