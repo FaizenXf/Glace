@@ -19,8 +19,7 @@ module.exports = {
                 .setTitle(lang.avatarTitle.replace('{username}', user.username))
                 .setImage(avatarUrlPng)
                 .setDescription(`
-                    **[${lang.downloadPng}](${avatarUrlPng})**
-                    **[${lang.downloadJpeg}](${avatarUrlJpeg})**
+                    **[${lang.downloadPng}](${avatarUrlPng})** **[${lang.downloadJpeg}](${avatarUrlJpeg})**
                 `)
                 .setTimestamp();
         };
