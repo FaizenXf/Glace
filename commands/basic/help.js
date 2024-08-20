@@ -91,8 +91,8 @@ module.exports = {
 > <:saf_moderation:1260983899853688935> : Moderation 
 > <:saf_util:1260984270726631576> : Utility
 > <:saf_music:1260983606336290968> : Music
-> <:saf_setting:1260984135615250524> : Setup \n`
-                    commands: [
+> <:saf_setting:1260984135615250524> : Setup \n`,
+                commands: [
                         `** Developer:**FaizenSosuke\n`,
                         `**Bot Version:** 1.0.0\n`,
                         `**Total Servers:** ${totalServers}\n`,
