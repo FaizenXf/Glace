@@ -92,7 +92,7 @@ module.exports = {
 > <:saf_util:1260984270726631576> : Utility
 > <:saf_music:1260983606336290968> : Music
 > <:saf_setting:1260984135615250524> : Setup \n`
-                    /*commands: [
+                    commands: [
                         `** Developer:**FaizenSosuke\n`,
                         `**Bot Version:** 1.0.0\n`,
                         `**Total Servers:** ${totalServers}\n`,
@@ -101,7 +101,7 @@ module.exports = {
                         `**Total Commands:** ${totalCommands}\n`,
                         `**Enabled Categories:** ${enabledCategoriesList.join(', ')}\n`,
                         `**Disabled Categories:** ${disabledCategoriesList.join(', ')}\n`
-                    ],*/
+                    ],
                     image: "https://media.discordapp.net/attachments/1267331594017046568/1271517011477922014/Black_and_White_Pattern_Welcome_Discord_Profile_Banner_20240809_224307_0000.png?ex=66b79fff&is=66b64e7f&hm=61cbc08a8f8f3e4dfa5b69af0febec3f87390aa36a9f0f80c7515ced180562c4&",
                     color: "#3498db",
                     //thumbnail: "https://cdn.discordapp.com/attachments/1264134884432285766/1270353776489922651/s_removed.png?ex=66b364a6&is=66b21326&hm=2d4ded259b57f476c901c58401e1d6faba2653c0a964ee1c4f371ecf3da52100&",
