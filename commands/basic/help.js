@@ -83,7 +83,7 @@ module.exports = {
                 pages.push({
                     title: 'Bot Information',
                     description: `<:Knownas:1266799019472978076> ** __ABOUT ME. . !__**
-> Heya, It's " __Safarii Utility__ "A Elegant Multipurpose Discord Bot with Impressive Quality of Sound System & Large Amout of Features For Greater Experience . " __Safarii Utility__ " is Making Music & Moderation More Enhanced in Discord.
+> Heya, It's " __Safarii Utility__ "A Multipurpose Discord Bot with Impressive Quality of Sound System & Large Amout of Features For Greater Experience . " __Safarii Utility__ " is Making Music & Moderation More Enhanced in Discord.
 
 **<:Knownas:1266799019472978076> __CATEGORIES. . !__**\n> <:saf_anime:1260983037362049066> : Anime
 > <:saf_info:1260983784397078668> : Information 
@@ -93,12 +93,11 @@ module.exports = {
 > <:saf_music:1260983606336290968> : Music
 > <:saf_setting:1260984135615250524> : Setup \n`,
                 commands: [
-                        `** Developer:**FaizenSosuke\n`,
-                        `**Bot Version:** 1.0.0\n`,
-                        `**Total Servers:** ${totalServers}\n`,
-                        `**Total Members:** ${totalMembers}\n`,
-                        `**Bot Uptime:** ${uptimeHours}h ${uptimeMinutes}m ${uptimeSeconds}s\n`,
-                        `**Total Commands:** ${totalCommands}\n`,
+                        `** Developer: **FaizenSosuke\n`,
+                        `** Servers:** ${totalServers}\n`,
+                        `** Members:** ${totalMembers}\n`,
+                        `** Uptime:** ${uptimeHours}h ${uptimeMinutes}m ${uptimeSeconds}s\n`,
+                        `** Commands:** ${totalCommands}\n`,
                         `**Enabled Categories:** ${enabledCategoriesList.join(', ')}\n`,
                         `**Disabled Categories:** ${disabledCategoriesList.join(', ')}\n`
                     ],
@@ -249,14 +248,13 @@ module.exports = {
                 pages.push({
                     title: 'Bot Information',
                     description: `<:Knownas:1266799019472978076> ** __ABOUT ME. . !__**
-> Heya, It's " __Safarii Utility__ "A Elegant Multipurpose Discord Bot with Impressive Quality of Sound System & Large Amout of Features For Greater Experience . " __Safarii Utility__ " is Making Music & Moderation More Enhanced in Discord.`,
+> Heya, It's " __Safarii Utility__ "A Multipurpose Discord Bot with Impressive Quality of Sound System & Large Amout of Features For Greater Experience . " __Safarii Utility__ " is Making Music & Moderation More Enhanced in Discord.`,
                     commands: [
-                        `**Developer:** FaizenSosuke\n`,
-                        `**Bot Version:** 1.0.0\n`,
-                        `**Total Servers:** ${totalServers}\n`,
-                        `**Total Members:** ${totalMembers}\n`,
-                        `**Bot Uptime:** ${uptimeHours}h ${uptimeMinutes}m ${uptimeSeconds}s\n`,
-                        `**Total Commands:** ${totalCommands}\n`,
+                        `**Developer: **FaizenSosuke\n`,
+                        `** Servers:** ${totalServers}\n`,
+                        `** Members:** ${totalMembers}\n`,
+                        `** Uptime:** ${uptimeHours}h ${uptimeMinutes}m ${uptimeSeconds}s\n`,
+                        `** Commands:** ${totalCommands}\n`,
                         `**Enabled Categories:** ${enabledCategoriesList.join(', ')}\n`,
                         `**Disabled Categories:** ${disabledCategoriesList.join(', ')}\n`
                     ],
@@ -358,7 +356,7 @@ module.exports = {
                     return new EmbedBuilder().setColor('#3498db').setTitle('Error').setDescription('Page not found.');
                 }
 
-                const fieldName = page.title === "Bot Information" ? "Additional Information" : "Commands";
+                const fieldName = page.title === "Bot Information" ? "Bot Information " : "Commands";
 
                 // Ensure a valid color is always set
                 const color = page.color || '#3498db';
