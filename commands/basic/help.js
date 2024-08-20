@@ -93,13 +93,11 @@ module.exports = {
 > <:saf_music:1260983606336290968> : Music
 > <:saf_setting:1260984135615250524> : Setup \n`,
                 commands: [
-                        `** Developer: **FaizenSosuke\n`,
-                        `** Servers:** ${totalServers}\n`,
-                        `** Members:** ${totalMembers}\n`,
-                        `** Uptime:** ${uptimeHours}h ${uptimeMinutes}m ${uptimeSeconds}s\n`,
-                        `** Commands:** ${totalCommands}\n`,
-                        `**Enabled Categories:** ${enabledCategoriesList.join(', ')}\n`,
-                        `**Disabled Categories:** ${disabledCategoriesList.join(', ')}\n`
+                        `**Developer: **FaizenSosuke\n`,
+                        `**Servers:** ${totalServers}\n`,
+                        `**Members:** ${totalMembers}\n`,
+                        `**Uptime:** ${uptimeHours}h ${uptimeMinutes}m ${uptimeSeconds}s\n`
+                        
                     ],
                     image: "https://media.discordapp.net/attachments/1267331594017046568/1271517011477922014/Black_and_White_Pattern_Welcome_Discord_Profile_Banner_20240809_224307_0000.png?ex=66b79fff&is=66b64e7f&hm=61cbc08a8f8f3e4dfa5b69af0febec3f87390aa36a9f0f80c7515ced180562c4&",
                     color: "#3498db",
@@ -251,12 +249,9 @@ module.exports = {
 > Heya, It's " __Safarii Utility__ "A Multipurpose Discord Bot with Impressive Quality of Sound System & Large Amout of Features For Greater Experience . " __Safarii Utility__ " is Making Music & Moderation More Enhanced in Discord.`,
                     commands: [
                         `**Developer: **FaizenSosuke\n`,
-                        `** Servers:** ${totalServers}\n`,
-                        `** Members:** ${totalMembers}\n`,
-                        `** Uptime:** ${uptimeHours}h ${uptimeMinutes}m ${uptimeSeconds}s\n`,
-                        `** Commands:** ${totalCommands}\n`,
-                        `**Enabled Categories:** ${enabledCategoriesList.join(', ')}\n`,
-                        `**Disabled Categories:** ${disabledCategoriesList.join(', ')}\n`
+                        `**Servers:** ${totalServers}\n`,
+                        `**Members:** ${totalMembers}\n`,
+                        `**Uptime:** ${uptimeHours}h ${uptimeMinutes}m ${uptimeSeconds}s\n`
                     ],
                     image: "https://media.discordapp.net/attachments/1267331594017046568/1271517011477922014/Black_and_White_Pattern_Welcome_Discord_Profile_Banner_20240809_224307_0000.png?ex=66b79fff&is=66b64e7f&hm=61cbc08a8f8f3e4dfa5b69af0febec3f87390aa36a9f0f80c7515ced180562c4&",
                     color: "#3498db",
@@ -286,9 +281,8 @@ module.exports = {
                 for (const [category, commands] of Object.entries(prefixCommands)) {
                     const page = {
                         title: `${category.charAt(0).toUpperCase() + category.slice(1)} Commands`,
-                        description: `**Total Commands : **${commands.length}\n` +
-                            `**Usage : **Only Prefix commands with \`${serverPrefix}\`\n\n` +
-                            `${category.charAt(0).toUpperCase() + category.slice(1)} related commands`,
+                        description: `**Total Commands : **${commands.length}\n`
+                            ,
                         commands: commands.map(command => `\`\`${command.name}\`\``),
                         image: "",
                         color: "",
@@ -364,7 +358,7 @@ module.exports = {
                 return new EmbedBuilder()
                     .setTitle(page.title)
                     .setDescription(page.description)
-                    .setColor(color)
+                    .setColor('#00ff39')
                     //.setImage("https://media.discordapp.net/attachments/1267331594017046568/1271517011477922014/Black_and_White_Pattern_Welcome_Discord_Profile_Banner_20240809_224307_0000.png?ex=66b79fff&is=66b64e7f&hm=61cbc08a8f8f3e4dfa5b69af0febec3f87390aa36a9f0f80c7515ced180562c4&")
                     //.setThumbnail(page.thumbnail)
                     .setAuthor({ name: page.author.name, iconURL: page.author.iconURL, url: page.author.url })
@@ -398,7 +392,7 @@ module.exports = {
                     .addComponents(
                         new StringSelectMenuBuilder()
                             .setCustomId('page-select')
-                            .setPlaceholder('Select a page')
+                            .setPlaceholder('Click to See All Commands')
                             .addOptions(pages.map((page, index) => ({
                                 label: page.title,
                                 value: index.toString()
