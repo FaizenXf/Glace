@@ -14,6 +14,9 @@ module.exports = {
             .setColor('#0099ff')
             .setTitle(lang.pingTitle)
             .setDescription(`${lang.botLatency}: ${botLatency}ms\n${lang.apiLatency}: ${apiLatency}ms`)
+            .setFooter({text: 'Safari Utility | use /help for more info'}
+                
+            )
             .setTimestamp();
 
         await interaction.reply({ embeds: [embed] });
