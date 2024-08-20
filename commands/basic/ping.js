@@ -17,7 +17,7 @@ module.exports = {
             .setFooter({text: 'Safari Utility | use /help for more info'}
                 
             )
-            .setTimestamp();
+            ;
 
         await interaction.reply({ embeds: [embed] });
     },
