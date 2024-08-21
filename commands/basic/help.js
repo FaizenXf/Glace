@@ -93,8 +93,7 @@ module.exports = {
 > <:saf_music:1260983606336290968> : Music
 > <:saf_setting:1260984135615250524> : Setup \n`,
                 commands: [
-                        `> <:Anime8:1275889678742192261> : Anime\n> <:saf_util:1260984270726631576> : Utility\n> <:troll:1275888876170383447> : Troll\n> <:Info:1275889507673313385> : Others\n
-**Developer: **FaizenSosuke\n`,`**Servers:** ${totalServers}\n`,`**Members:** ${totalMembers}\n`,`**Uptime:** ${uptimeHours}h ${uptimeMinutes}m ${uptimeSeconds}s\n`
+                        `> <:Anime8:1275889678742192261> : Anime\n> <:saf_util:1260984270726631576> : Utility\n> <:troll:1275888876170383447> : Troll\n> <:Info:1275889507673313385> : Others`
                         
                     ],
                     image: "https://media.discordapp.net/attachments/1267331594017046568/1271517011477922014/Black_and_White_Pattern_Welcome_Discord_Profile_Banner_20240809_224307_0000.png?ex=66b79fff&is=66b64e7f&hm=61cbc08a8f8f3e4dfa5b69af0febec3f87390aa36a9f0f80c7515ced180562c4&",
@@ -244,9 +243,9 @@ module.exports = {
                 pages.push({
                     title: 'Bot Information',
                     description: `<:Knownas:1266799019472978076> ** __ABOUT ME. . !__**
-> Heya, It's " __Safarii Utility__ "A Multipurpose Discord Bot with Impressive Quality of Sound System & Large Amout of Features For Greater Experience . " __Safarii Utility__ " is Making Music & Moderation More Enhanced in Discord.`,
+> Heya, It's " __Safarii Utility__ " A Multipurpose Discord Bot with Impressive Quality of Sound System & Large Amout of Features For Greater Experience . " __Safarii Utility__ " is Making Music & Moderation More Enhanced in Discord.`,
                     commands: [
-                        `**Developer: **FaizenSosuke\n`,
+                        `, **Developer: **FaizenSosuke\n`,
                         `**Servers:** ${totalServers}\n`,
                         `**Members:** ${totalMembers}\n`,
                         `**Uptime:** ${uptimeHours}h ${uptimeMinutes}m ${uptimeSeconds}s\n`
@@ -348,7 +347,7 @@ module.exports = {
                     return new EmbedBuilder().setColor('#3498db').setTitle('Error').setDescription('Page not found.');
                 }
 
-                const fieldName = page.title === "Bot Information" ? "Bot Information " : "Commands";
+                const fieldName = page.title === "Bot Information" ? "<:Knownas:1266799019472978076> __EXTRA MODULES. . !__ " : "Commands";
 
                 // Ensure a valid color is always set
                 const color = page.color || '#3498db';
@@ -357,7 +356,7 @@ module.exports = {
                     .setTitle(page.title)
                     .setDescription(page.description)
                     .setColor('#00ff39')
-                    //.setImage("https://media.discordapp.net/attachments/1267331594017046568/1271517011477922014/Black_and_White_Pattern_Welcome_Discord_Profile_Banner_20240809_224307_0000.png?ex=66b79fff&is=66b64e7f&hm=61cbc08a8f8f3e4dfa5b69af0febec3f87390aa36a9f0f80c7515ced180562c4&")
+                    .setImage("https://media.discordapp.net/attachments/1232058051251667075/1232058087364366366/copyright-success.png?ex=66c6efc2&is=66c59e42&hm=c518046648c4652c79093654a5a1b52dde8d6e4a884960ae6e1996489a43a537&")
                     //.setThumbnail(page.thumbnail)
                     .setAuthor({ name: page.author.name, iconURL: page.author.iconURL, url: page.author.url })
                     .addFields({ name: fieldName, value: page.commands.join(', ') });
@@ -390,7 +389,7 @@ module.exports = {
                     .addComponents(
                         new StringSelectMenuBuilder()
                             .setCustomId('page-select')
-                            .setPlaceholder('Click to See All Commands')
+                            .setPlaceholder(' 👀 | Click to See All Commands')
                             .addOptions(pages.map((page, index) => ({
                                 label: page.title,
                                 value: index.toString()
