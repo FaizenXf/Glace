@@ -6,7 +6,7 @@ module.exports = {
     execute(client) {
   
         const activities = [
-            { name: '.help | @sixtynine', type: ActivityType.Watching }
+            { name: '/help | @Watching-U', type: ActivityType.Watching }
             
         ];
 
