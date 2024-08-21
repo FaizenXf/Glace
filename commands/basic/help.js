@@ -85,7 +85,7 @@ module.exports = {
                     description: `<:Knownas:1266799019472978076> ** __ABOUT ME. . !__**
 > Heya, It's " __Safarii Utility__ "A Multipurpose Discord Bot with Impressive Quality of Sound System & Large Amout of Features For Greater Experience . " __Safarii Utility__ " is Making Music & Moderation More Enhanced in Discord.
 
-**<:Knownas:1266799019472978076> __CATEGORIES. . !__**\n> <:saf_anime:1260983037362049066> : Anime
+**<:Knownas:1266799019472978076> __CATEGORIES. . !__**\n
 > <:saf_info:1260983784397078668> : Information 
 > <:saf_fun:1260983847282020382> : Fun-Game 
 > <:saf_moderation:1260983899853688935> : Moderation 
@@ -93,7 +93,8 @@ module.exports = {
 > <:saf_music:1260983606336290968> : Music
 > <:saf_setting:1260984135615250524> : Setup \n`,
                 commands: [
-                        `**Developer: **FaizenSosuke\n`,`**Servers:** ${totalServers}\n`,`**Members:** ${totalMembers}\n`,`**Uptime:** ${uptimeHours}h ${uptimeMinutes}m ${uptimeSeconds}s\n`
+                        `> <:Anime8:1275889678742192261> : Anime\n> <:saf_util:1260984270726631576> : Utility\n> <:troll:1275888876170383447> : Troll\n> <:Info:1275889507673313385> : Others\n
+**Developer: **FaizenSosuke\n`,`**Servers:** ${totalServers}\n`,`**Members:** ${totalMembers}\n`,`**Uptime:** ${uptimeHours}h ${uptimeMinutes}m ${uptimeSeconds}s\n`
                         
                     ],
                     image: "https://media.discordapp.net/attachments/1267331594017046568/1271517011477922014/Black_and_White_Pattern_Welcome_Discord_Profile_Banner_20240809_224307_0000.png?ex=66b79fff&is=66b64e7f&hm=61cbc08a8f8f3e4dfa5b69af0febec3f87390aa36a9f0f80c7515ced180562c4&",
