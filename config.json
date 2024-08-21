@@ -12,12 +12,12 @@
         "troll": true
     },
     "categories": {
-        "anime": false,
+        "anime": true,
         "basic": true,
         "utility": true,
         "moderation": true,
         "fun": true,
-        "distube music": true,
+        "distube": true,
         "setups": true
     },
     "lavalink": {

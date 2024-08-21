@@ -93,7 +93,7 @@ module.exports = {
 > <:saf_music:1260983606336290968> : Music
 > <:saf_setting:1260984135615250524> : Setup \n`,
                 commands: [
-                        `> <:Anime8:1275889678742192261> : Anime\n> <:saf_util:1260984270726631576> : Utility\n> <:troll:1275888876170383447> : Troll\n> <:Info:1275889507673313385> : Others`
+                        `> <:saf_music:1260983606336290968> : Music\n> <:saf_util:1260984270726631576> : Utility\n> <:troll:1275888876170383447> : Troll\n> <:Info:1275889507673313385> : Others`
                         
                     ],
                     image: "https://media.discordapp.net/attachments/1267331594017046568/1271517011477922014/Black_and_White_Pattern_Welcome_Discord_Profile_Banner_20240809_224307_0000.png?ex=66b79fff&is=66b64e7f&hm=61cbc08a8f8f3e4dfa5b69af0febec3f87390aa36a9f0f80c7515ced180562c4&",
@@ -121,12 +121,11 @@ module.exports = {
 
                 for (const [category, commands] of Object.entries(commandData)) {
                     const page = {
-                        title: `${category.charAt(0).toUpperCase() + category.slice(1)} Commands`,
-                        description: `**Total Commands : **${commands.length}\n` +
-                            `${category.charAt(0).toUpperCase() + category.slice(1)} related commands`,
+                        title: `${category.charAt(0).toUpperCase() + category.slice(1)} Commands | ${commands.length}`,
+                        
                         commands: commands.map(command => `\`\`${command}\`\``),
                         image: "",
-                        color: "#3498db",
+                        color: "#00ff39",
                         thumbnail: "",
                         author: {
                             name: `${category.charAt(0).toUpperCase() + category.slice(1)} Commands`,
@@ -277,9 +276,8 @@ module.exports = {
 
                 for (const [category, commands] of Object.entries(prefixCommands)) {
                     const page = {
-                        title: `${category.charAt(0).toUpperCase() + category.slice(1)} Commands`,
-                        description: `**Total Commands : **${commands.length}\n`
-                            ,
+                        title: `${category.charAt(0).toUpperCase() + category.slice(1)} Commands | ${commands.length}`,
+                        
                         commands: commands.map(command => `\`\`${command.name}\`\``),
                         image: "",
                         color: "",
@@ -350,7 +348,7 @@ module.exports = {
                 const fieldName = page.title === "Bot Information" ? "<:Knownas:1266799019472978076> __EXTRA MODULES. . !__ " : "Commands";
 
                 // Ensure a valid color is always set
-                const color = page.color || '#3498db';
+                const color = page.color || '#00ff39';
 
                 return new EmbedBuilder()
                     .setTitle(page.title)
@@ -399,7 +397,7 @@ module.exports = {
 
             await interaction.reply({ embeds: [createEmbed()], components: [createDropdown(), createActionRow()] });
 
-            const collector = interaction.channel.createMessageComponentCollector({ time: 60000 * 2 });
+            const collector = interaction.channel.createMessageComponentCollector({ time: 60000 * 5 });
 
             collector.on('collect', async (button) => {
                 if (button.user.id !== interaction.user.id) return;
