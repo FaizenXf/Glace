@@ -121,7 +121,7 @@ module.exports = {
 
                 for (const [category, commands] of Object.entries(commandData)) {
                     const page = {
-                        title: `${category.charAt(0).toUpperCase() + category.slice(1)} Commands | ${commands.length}`,
+                        title: `${category.charAt(0).toUpperCase() + category.slice(1)} Commands`,
                         
                         commands: commands.map(command => `\`\`${command}\`\``),
                         image: "",
@@ -165,7 +165,7 @@ module.exports = {
                             page.thumbnail = "https://cdn.discordapp.com/attachments/1264134884432285766/1270353776489922651/s_removed.png?ex=66b364a6&is=66b21326&hm=2d4ded259b57f476c901c58401e1d6faba2653c0a964ee1c4f371ecf3da52100&";
                             page.author.iconURL = "https://cdn.discordapp.com/attachments/1230824451990622299/1253655047259160596/6186-developer-bot.gif?ex=66a9667f&is=66a814ff&hm=1494b63ccfaf2dae30a35af520fb748dd17e76195c206f2925b526595018c60f&";
                             break;
-                        case 'distube music':
+                        case 'distube':
                             page.image = "https://cdn.discordapp.com/attachments/1264134884432285766/1270352605154902151/GlaceYT.gif?ex=66b3638f&is=66b2120f&hm=23878b54affd61573b105db7c1c016eb730911dc762b3fbabac5a32cbc884119&";
                             page.color = "#ff0000";
                             page.thumbnail = "https://cdn.discordapp.com/attachments/1264134884432285766/1270353776489922651/s_removed.png?ex=66b364a6&is=66b21326&hm=2d4ded259b57f476c901c58401e1d6faba2653c0a964ee1c4f371ecf3da52100&";
@@ -276,7 +276,7 @@ module.exports = {
 
                 for (const [category, commands] of Object.entries(prefixCommands)) {
                     const page = {
-                        title: `${category.charAt(0).toUpperCase() + category.slice(1)} Commands | ${commands.length}`,
+                        title: `${category.charAt(0).toUpperCase() + category.slice(1)} Commands`,
                         
                         commands: commands.map(command => `\`\`${command.name}\`\``),
                         image: "",
@@ -345,7 +345,7 @@ module.exports = {
                     return new EmbedBuilder().setColor('#3498db').setTitle('Error').setDescription('Page not found.');
                 }
 
-                const fieldName = page.title === "Bot Information" ? "<:Knownas:1266799019472978076> __EXTRA MODULES. . !__ " : "Commands";
+                const fieldName = page.title === "Bot Information" ? "<:Knownas:1266799019472978076> __EXTRA CMNDS. . !__ " : "Commands";
 
                 // Ensure a valid color is always set
                 const color = page.color || '#00ff39';
